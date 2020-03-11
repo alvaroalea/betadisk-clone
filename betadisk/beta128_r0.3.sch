@@ -96,7 +96,6 @@ Connection ~ 10700 8450
 Connection ~ 10700 9450
 Connection ~ 11150 8450
 Connection ~ 11150 9450
-Connection ~ 11350 4000
 Connection ~ 11350 4800
 Connection ~ 11600 4800
 Connection ~ 11600 8450
@@ -136,7 +135,6 @@ Connection ~ 22900 6700
 Connection ~ 23750 8450
 Connection ~ 24200 5700
 Connection ~ 24550 9350
-Connection ~ 25150 5300
 Connection ~ 25900 9550
 Connection ~ 26400 8550
 Connection ~ 26400 9050
@@ -160,6 +158,8 @@ Connection ~ 27850 7100
 Connection ~ 27850 7200
 Connection ~ 27850 7300
 Connection ~ 28500 8850
+Connection ~ 11350 4000
+Connection ~ 25150 5300
 NoConn ~ 1600 1500
 NoConn ~ 1600 1600
 NoConn ~ 1600 1900
@@ -353,7 +353,7 @@ Entry Wire Line
 Entry Wire Line
 	21250 7350 21350 7250
 Wire Wire Line
-	625  2200 625  2300
+	650  2200 650  2400
 Wire Wire Line
 	850  1800 1600 1800
 Wire Wire Line
@@ -385,7 +385,7 @@ Wire Wire Line
 Wire Wire Line
 	1325 2100 1600 2100
 Wire Wire Line
-	1325 2200 625  2200
+	1325 2200 650  2200
 Wire Wire Line
 	1375 5550 1375 5650
 Wire Wire Line
@@ -715,9 +715,9 @@ Wire Wire Line
 Wire Wire Line
 	7650 2450 7650 2350
 Wire Wire Line
-	7850 1850 7850 1900
+	7850 1850 7850 1950
 Wire Wire Line
-	7850 2300 7850 2350
+	7850 2250 7850 2350
 Wire Wire Line
 	7850 2350 8450 2350
 Wire Wire Line
@@ -823,9 +823,9 @@ Wire Wire Line
 Wire Wire Line
 	9850 6500 10600 6500
 Wire Wire Line
-	9950 1050 9950 1100
+	9950 1050 9950 1150
 Wire Wire Line
-	9950 1500 9950 1550
+	9950 1450 9950 1550
 Wire Wire Line
 	9950 1550 9950 1600
 Wire Wire Line
@@ -881,13 +881,15 @@ Wire Wire Line
 Wire Wire Line
 	11350 2050 11300 2050
 Wire Wire Line
-	11350 2050 11350 3600
+	11350 2050 11350 3650
+Wire Wire Line
+	11350 3950 11350 4000
 Wire Wire Line
 	11350 4000 11800 4000
 Wire Wire Line
-	11350 4300 11350 4350
+	11350 4300 11350 4400
 Wire Wire Line
-	11350 4750 11350 4800
+	11350 4700 11350 4800
 Wire Wire Line
 	11350 4800 11100 4800
 Wire Wire Line
@@ -1181,7 +1183,9 @@ Wire Wire Line
 Wire Wire Line
 	22250 8200 22100 8200
 Wire Wire Line
-	22400 8200 22400 8250
+	22400 8200 22400 8300
+Wire Wire Line
+	22400 8600 22400 8650
 Wire Wire Line
 	22400 8650 22350 8650
 Wire Wire Line
@@ -1243,9 +1247,9 @@ Wire Wire Line
 Wire Wire Line
 	23650 9550 24600 9550
 Wire Wire Line
-	23750 8000 23750 7950
+	23750 7950 23750 8050
 Wire Wire Line
-	23750 8400 23750 8450
+	23750 8350 23750 8450
 Wire Wire Line
 	23750 8450 23800 8450
 Wire Wire Line
@@ -1303,11 +1307,15 @@ Wire Wire Line
 Wire Wire Line
 	25050 5700 24200 5700
 Wire Wire Line
+	25100 5300 25150 5300
+Wire Wire Line
 	25150 3000 25150 3700
 Wire Wire Line
-	25150 4900 25150 4850
+	25150 4850 25150 4950
 Wire Wire Line
-	25150 5300 25100 5300
+	25150 5250 25150 5300
+Wire Wire Line
+	25150 5300 25300 5300
 Wire Wire Line
 	25150 6700 27350 6700
 Wire Wire Line
@@ -1318,8 +1326,6 @@ Wire Wire Line
 	25300 4100 25300 5300
 Wire Wire Line
 	25300 4100 25350 4100
-Wire Wire Line
-	25300 5300 25150 5300
 Wire Wire Line
 	25350 3000 25150 3000
 Wire Wire Line
@@ -1509,13 +1515,13 @@ Wire Bus Line
 Wire Bus Line
 	3700 1600 3700 1800
 Wire Bus Line
-	3700 1800 3700 1900
+	3700 1800 3700 2000
 Wire Bus Line
-	3700 1900 3700 2100
+	3700 2000 3700 2200
 Wire Bus Line
-	3700 2100 3700 2300
+	3700 2200 3700 2400
 Wire Bus Line
-	3700 2300 3700 2500
+	3700 2400 3700 2500
 Wire Bus Line
 	3700 2500 3700 2700
 Wire Bus Line
@@ -1523,19 +1529,19 @@ Wire Bus Line
 Wire Bus Line
 	3700 2900 3700 3000
 Wire Bus Line
-	3700 3200 3700 3300
+	3700 3200 3700 3400
 Wire Bus Line
-	3700 3300 3700 3500
+	3700 3400 3700 3500
 Wire Bus Line
-	3700 3500 3700 3600
+	3700 3500 3700 3700
 Wire Bus Line
-	3700 3600 3700 3800
+	3700 3700 3700 3900
 Wire Bus Line
-	3700 3800 3700 4550
+	3700 3900 3700 4650
 Wire Bus Line
-	3700 4550 3700 4750
+	3700 4650 3700 4850
 Wire Bus Line
-	3700 4750 3700 4950
+	3700 4850 3700 4950
 Wire Bus Line
 	3700 4950 3700 5150
 Wire Bus Line
@@ -1543,23 +1549,25 @@ Wire Bus Line
 Wire Bus Line
 	5500 2800 5500 4650
 Wire Bus Line
-	5500 4650 5500 4750
+	5500 4650 5500 4850
 Wire Bus Line
-	5500 4750 5500 4950
+	5500 4850 5500 5050
 Wire Bus Line
-	5500 4950 5500 5150
+	5500 5050 5500 5250
 Wire Bus Line
-	5500 5150 5500 5600
+	5500 5250 5500 5600
 Wire Bus Line
-	6450 1000 6450 1500
+	6450 1000 6450 1150
 Wire Bus Line
-	6450 1500 6450 1700
+	6450 1150 6450 1600
+Wire Bus Line
+	6450 1600 6450 1700
 Wire Bus Line
 	6450 1700 6450 1900
 Wire Bus Line
-	6450 1900 6450 2100
+	6450 1900 6450 2000
 Wire Bus Line
-	6450 2100 6450 2800
+	6450 2000 6450 2800
 Wire Bus Line
 	6450 2800 5500 2800
 Wire Bus Line
@@ -2428,6 +2436,17 @@ F 3 "" H 27850 8200 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
+L power:GND #GND010
+U 1 1 845C69E3
+P 650 2400
+F 0 "#GND010" H 650 2400 50  0001 C CNN
+F 1 "GND" H 575 2200 60  0000 L BNN
+F 2 "" H 650 2400 50  0001 C CNN
+F 3 "" H 650 2400 50  0001 C CNN
+	1    650  2400
+	1    0    0    -1  
+$EndComp
+$Comp
 L power:GND #PWR021
 U 1 1 5B4CC0A2
 P 1375 5750
@@ -2637,17 +2656,6 @@ F 3 "~" H 950 10950 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L dos_5-0x-eagle-import:GND #GND010
-U 1 1 845C69E3
-P 625 2400
-F 0 "#GND010" H 625 2400 50  0001 C CNN
-F 1 "GND" H 525 2300 60  0000 L BNN
-F 2 "" H 625 2400 50  0001 C CNN
-F 3 "" H 625 2400 50  0001 C CNN
-	1    625  2400
-	1    0    0    -1  
-$EndComp
-$Comp
 L Device:R R12
 U 1 1 5B546E94
 P 2300 5175
@@ -2670,6 +2678,17 @@ F 3 "~" H 2600 5175 50  0001 C CNN
 	1    0    0    1   
 $EndComp
 $Comp
+L Device:R R1
+U 1 1 4B3B8125
+P 7850 2100
+F 0 "R1" H 7700 2159 60  0000 L BNN
+F 1 "1k" H 7700 1970 60  0000 L BNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" H 7850 2100 50  0001 C CNN
+F 3 "" H 7850 2100 50  0001 C CNN
+	1    7850 2100
+	1    0    0    1   
+$EndComp
+$Comp
 L Device:R R6
 U 1 1 7A67179C
 P 9650 1300
@@ -2678,6 +2697,39 @@ F 1 "120k" V 9800 1200 60  0000 L BNN
 F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" H 9650 1300 50  0001 C CNN
 F 3 "" H 9650 1300 50  0001 C CNN
 	1    9650 1300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R5
+U 1 1 E15D264F
+P 9950 1300
+F 0 "R5" H 9900 1350 60  0000 L BNN
+F 1 "5k6" H 9800 1170 60  0000 L BNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" H 9950 1300 50  0001 C CNN
+F 3 "" H 9950 1300 50  0001 C CNN
+	1    9950 1300
+	1    0    0    1   
+$EndComp
+$Comp
+L Device:R R3
+U 1 1 83A6F2CB
+P 11350 3800
+F 0 "R3" H 11200 3859 60  0000 L BNN
+F 1 "470" H 11200 3670 60  0000 L BNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" H 11350 3800 50  0001 C CNN
+F 3 "" H 11350 3800 50  0001 C CNN
+	1    11350 3800
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R2
+U 1 1 70DE2412
+P 11350 4550
+F 0 "R2" H 11200 4609 60  0000 L BNN
+F 1 "5k6" H 11200 4420 60  0000 L BNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" H 11350 4550 50  0001 C CNN
+F 3 "" H 11350 4550 50  0001 C CNN
+	1    11350 4550
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -2780,51 +2832,7 @@ F 3 "~" H 22000 3250 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L dos_5-0x-eagle-import:R-EU_0207_10 R1
-U 1 1 4B3B8125
-P 7850 2100
-F 0 "R1" H 7700 2159 60  0000 L BNN
-F 1 "1k" H 7700 1970 60  0000 L BNN
-F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" H 7850 2100 50  0001 C CNN
-F 3 "" H 7850 2100 50  0001 C CNN
-	1    7850 2100
-	0    -1   1    0   
-$EndComp
-$Comp
-L dos_5-0x-eagle-import:R-EU_0207_10 R5
-U 1 1 E15D264F
-P 9950 1300
-F 0 "R5" H 9900 1350 60  0000 L BNN
-F 1 "5k6" H 9800 1170 60  0000 L BNN
-F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" H 9950 1300 50  0001 C CNN
-F 3 "" H 9950 1300 50  0001 C CNN
-	1    9950 1300
-	0    -1   1    0   
-$EndComp
-$Comp
-L dos_5-0x-eagle-import:R-EU_0207_10 R3
-U 1 1 83A6F2CB
-P 11350 3800
-F 0 "R3" H 11200 3859 60  0000 L BNN
-F 1 "470" H 11200 3670 60  0000 L BNN
-F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" H 11350 3800 50  0001 C CNN
-F 3 "" H 11350 3800 50  0001 C CNN
-	1    11350 3800
-	0    1    1    0   
-$EndComp
-$Comp
-L dos_5-0x-eagle-import:R-EU_0207_10 R2
-U 1 1 70DE2412
-P 11350 4550
-F 0 "R2" H 11200 4609 60  0000 L BNN
-F 1 "5k6" H 11200 4420 60  0000 L BNN
-F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" H 11350 4550 50  0001 C CNN
-F 3 "" H 11350 4550 50  0001 C CNN
-	1    11350 4550
-	0    1    1    0   
-$EndComp
-$Comp
-L dos_5-0x-eagle-import:R-EU_0207_10 R22
+L Device:R R22
 U 1 1 5E8FC539
 P 22400 8450
 F 0 "R22" H 22250 8509 60  0000 L BNN
@@ -2832,10 +2840,10 @@ F 1 "6k8" H 22250 8320 60  0000 L BNN
 F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" H 22400 8450 50  0001 C CNN
 F 3 "" H 22400 8450 50  0001 C CNN
 	1    22400 8450
-	0    1    1    0   
+	1    0    0    -1  
 $EndComp
 $Comp
-L dos_5-0x-eagle-import:R-EU_0207_10 R21
+L Device:R R21
 U 1 1 5F0584F0
 P 23750 8200
 F 0 "R21" H 23600 8259 60  0000 L BNN
@@ -2843,10 +2851,10 @@ F 1 "6k8" H 23600 8070 60  0000 L BNN
 F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" H 23750 8200 50  0001 C CNN
 F 3 "" H 23750 8200 50  0001 C CNN
 	1    23750 8200
-	0    -1   -1   0   
+	-1   0    0    1   
 $EndComp
 $Comp
-L dos_5-0x-eagle-import:R-EU_0207_10 R18
+L Device:R R18
 U 1 1 5E8F296D
 P 25150 5100
 F 0 "R18" H 25000 5159 60  0000 L BNN
@@ -2854,7 +2862,7 @@ F 1 "6k8" H 25000 4970 60  0000 L BNN
 F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" H 25150 5100 50  0001 C CNN
 F 3 "" H 25150 5100 50  0001 C CNN
 	1    25150 5100
-	0    -1   -1   0   
+	-1   0    0    1   
 $EndComp
 $Comp
 L Diode:1N4148 D7
@@ -2921,17 +2929,6 @@ F 2 "LED_THT:LED_D5.0mm" H 13650 3400 50  0001 C CNN
 F 3 "~" H 13650 3400 50  0001 C CNN
 	1    13650 3400
 	0    -1   -1   0   
-$EndComp
-$Comp
-L dos_5-0x-eagle-import:C-EU025-030X050 C5
-U 1 1 F9108C4C
-P 9950 1700
-F 0 "C5" H 10010 1715 60  0000 L BNN
-F 1 "100n" H 10010 1515 60  0000 L BNN
-F 2 "Capacitor_THT:C_Disc_D5.0mm_W2.5mm_P5.00mm" H 9950 1700 50  0001 C CNN
-F 3 "" H 9950 1700 50  0001 C CNN
-	1    9950 1700
-	1    0    0    -1  
 $EndComp
 $Comp
 L Device:C C1
@@ -3152,6 +3149,17 @@ F 2 "Capacitor_THT:C_Disc_D5.0mm_W2.5mm_P5.00mm" H 7188 9450 50  0001 C CNN
 F 3 "~" H 7150 9600 50  0001 C CNN
 	1    7150 9600
 	-1   0    0    1   
+$EndComp
+$Comp
+L Device:C C5
+U 1 1 F9108C4C
+P 9950 1750
+F 0 "C5" H 10010 1765 60  0000 L BNN
+F 1 "100n" H 10010 1565 60  0000 L BNN
+F 2 "Capacitor_THT:C_Disc_D5.0mm_W2.5mm_P5.00mm" H 9950 1750 50  0001 C CNN
+F 3 "" H 9950 1750 50  0001 C CNN
+	1    9950 1750
+	1    0    0    -1  
 $EndComp
 $Comp
 L Device:C C7
@@ -3770,7 +3778,7 @@ F 3 "http://www.ti.com/lit/gpn/sn74LS367" H 20750 4200 50  0001 C CNN
 	-1   0    0    -1  
 $EndComp
 $Comp
-L ALEA:GAL22V10 U22
+L 8bits:GAL22V10 U22
 U 1 1 5E5B8A27
 P 11100 6100
 F 0 "U22" H 11150 6900 50  0000 L CNN
@@ -3825,7 +3833,7 @@ F 3 "http://www.ti.com/lit/gpn/sn74LS161" H 27850 9050 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L ALEA:W27C512 U3
+L 8bits:W27C512 U3
 U 1 1 5E96589D
 P 5050 2750
 F 0 "U3" H 4800 4050 50  0000 C CNN
@@ -3836,7 +3844,7 @@ F 3 "" H 5050 3000 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L ALEA:FDC_MB8877 U12
+L 8bits:FDC_MB8877 U12
 U 1 1 5E91CE08
 P 22250 6700
 F 0 "U12" H 22350 8250 50  0000 C CNN
@@ -3847,7 +3855,7 @@ F 3 "" H 22250 6700 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L ALEA:ZX_Spectrum_Connector_GENERIC_SORTED J1
+L 8bits:ZX_Spectrum_Connector_GENERIC_SORTED J1
 U 1 1 5B1B7546
 P 2300 2750
 F 0 "J1" H 2300 4267 50  0000 C CNN
