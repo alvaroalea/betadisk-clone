@@ -1,4 +1,4 @@
-update=Wed 11 Mar 2020 11:16:27 PM +04
+update=mié 11 mar 2020 22:50:43 CET
 version=1
 last_client=kicad
 [general]
@@ -12,10 +12,12 @@ NetIExt=net
 version=1
 LibDir=
 [eeschema/libraries]
-[LibeditFrame]
-version=1
 [SchematicFrame]
 version=1
+[LibeditFrame]
+version=1
+[sheetnames]
+1=00000000-0000-0000-0000-00005e695a87:
 [pcbnew]
 version=1
 PageLayoutDescrFile=
@@ -259,5 +261,19 @@ uViaDrill=0.1
 dPairWidth=0.35
 dPairGap=0.3
 dPairViaGap=0.25
-[sheetnames]
-1=00000000-0000-0000-0000-00005e693c06:
+[schematic_editor]
+version=1
+PageLayoutDescrFile=
+PlotDirectoryName=
+SubpartIdSeparator=0
+SubpartFirstId=65
+NetFmtName=
+SpiceAjustPassiveValues=0
+LabSize=12700
+ERC_WriteFile=0
+ERC_TestSimilarLabels=1
+ERC_CheckUniqueGlobalLabels=1
+ERC_CheckBusDriverConflicts=1
+ERC_CheckBusEntryConflicts=1
+ERC_CheckBusToBusConflicts=1
+ERC_CheckBusToNetConflicts=1

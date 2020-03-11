@@ -715,6 +715,8 @@ Wire Wire Line
 Wire Wire Line
 	7650 2450 7650 2350
 Wire Wire Line
+	7725 3800 9250 3800
+Wire Wire Line
 	7850 1850 7850 1950
 Wire Wire Line
 	7850 2250 7850 2350
@@ -753,8 +755,6 @@ Wire Wire Line
 Wire Wire Line
 	8950 2750 8950 2800
 Wire Wire Line
-	9000 3800 9250 3800
-Wire Wire Line
 	9150 5500 9350 5500
 Wire Wire Line
 	9250 3800 9250 4900
@@ -773,7 +773,7 @@ Wire Wire Line
 Wire Wire Line
 	9400 3900 7150 3900
 Wire Wire Line
-	9400 4000 9000 4000
+	9400 4000 7725 4000
 Wire Wire Line
 	9400 4100 9350 4100
 Wire Wire Line
@@ -995,11 +995,11 @@ Wire Wire Line
 Wire Wire Line
 	14900 5600 15050 5600
 Wire Wire Line
-	15250 5300 15250 5400
+	15350 5350 15350 5400
 Wire Wire Line
-	15250 5800 15250 5900
+	15350 5800 15350 5900
 Wire Wire Line
-	15250 5900 15750 5900
+	15350 5900 15850 5900
 Wire Wire Line
 	17800 8200 17800 8550
 Wire Wire Line
@@ -1161,7 +1161,7 @@ Wire Wire Line
 Wire Wire Line
 	21850 3400 21850 3800
 Wire Wire Line
-	21850 3800 22100 3800
+	21850 3800 22425 3800
 Wire Wire Line
 	22000 3100 22200 3100
 Wire Wire Line
@@ -1171,9 +1171,7 @@ Wire Wire Line
 Wire Wire Line
 	22000 3500 22200 3500
 Wire Wire Line
-	22000 4000 22100 4000
-Wire Wire Line
-	22100 3900 21700 3900
+	22000 4000 22425 4000
 Wire Wire Line
 	22200 3100 22400 3100
 Wire Wire Line
@@ -1189,6 +1187,8 @@ Wire Wire Line
 Wire Wire Line
 	22400 8650 22350 8650
 Wire Wire Line
+	22425 3900 21700 3900
+Wire Wire Line
 	22750 5500 22850 5500
 Wire Wire Line
 	22750 5600 22850 5600
@@ -1199,13 +1199,13 @@ Wire Wire Line
 Wire Wire Line
 	22750 6000 22850 6000
 Wire Wire Line
-	22750 6300 22950 6300
+	22750 6300 23150 6300
 Wire Wire Line
-	22750 6400 22950 6400
+	22750 6400 23150 6400
 Wire Wire Line
-	22750 6500 22950 6500
+	22750 6500 23150 6500
 Wire Wire Line
-	22750 6600 22950 6600
+	22750 6600 23150 6600
 Wire Wire Line
 	22750 6700 22900 6700
 Wire Wire Line
@@ -1359,6 +1359,14 @@ Wire Wire Line
 Wire Wire Line
 	25950 3000 26100 3000
 Wire Wire Line
+	26000 5800 26650 5800
+Wire Wire Line
+	26000 5900 27350 5900
+Wire Wire Line
+	26000 6000 26850 6000
+Wire Wire Line
+	26000 6200 27350 6200
+Wire Wire Line
 	26200 8550 26400 8550
 Wire Wire Line
 	26350 3800 26450 3800
@@ -1369,14 +1377,6 @@ Wire Wire Line
 Wire Wire Line
 	26350 4100 26550 4100
 Wire Wire Line
-	26350 5800 26650 5800
-Wire Wire Line
-	26350 5900 27350 5900
-Wire Wire Line
-	26350 6000 26850 6000
-Wire Wire Line
-	26350 6200 27350 6200
-Wire Wire Line
 	26400 8550 26400 9050
 Wire Wire Line
 	26400 8550 26500 8550
@@ -1384,6 +1384,10 @@ Wire Wire Line
 	26400 9050 24850 9050
 Wire Wire Line
 	26400 9050 27350 9050
+Wire Wire Line
+	26425 6900 27350 6900
+Wire Wire Line
+	26425 7000 27350 7000
 Wire Wire Line
 	26450 3200 26700 3200
 Wire Wire Line
@@ -1419,15 +1423,11 @@ Wire Wire Line
 Wire Wire Line
 	26950 8850 27350 8850
 Wire Wire Line
+	27025 6000 27350 6000
+Wire Wire Line
 	27100 8700 27100 8750
 Wire Wire Line
 	27100 8750 27350 8750
-Wire Wire Line
-	27150 6000 27350 6000
-Wire Wire Line
-	27150 6900 27350 6900
-Wire Wire Line
-	27150 7000 27350 7000
 Wire Wire Line
 	27150 7100 27350 7100
 Wire Wire Line
@@ -1437,7 +1437,7 @@ Wire Wire Line
 Wire Wire Line
 	27300 3200 28650 3200
 Wire Wire Line
-	27300 4000 27850 4000
+	27300 4000 28150 4000
 Wire Wire Line
 	27300 8500 27300 8550
 Wire Wire Line
@@ -1455,7 +1455,7 @@ Wire Wire Line
 Wire Wire Line
 	27750 3550 28100 3550
 Wire Wire Line
-	27850 4400 27750 4400
+	27800 3450 28100 3450
 Wire Wire Line
 	27850 5700 27850 5800
 Wire Wire Line
@@ -1495,7 +1495,7 @@ Wire Wire Line
 Wire Wire Line
 	27850 9850 27850 9900
 Wire Wire Line
-	28050 3450 28100 3450
+	28150 4400 27750 4400
 Wire Wire Line
 	28350 8850 28500 8850
 Wire Wire Line
@@ -1509,7 +1509,7 @@ Wire Wire Line
 Wire Wire Line
 	28650 3450 28600 3450
 Wire Wire Line
-	28700 3550 28600 3550
+	29075 3550 28600 3550
 Wire Bus Line
 	3700 1000 3700 1600
 Wire Bus Line
@@ -1531,17 +1531,15 @@ Wire Bus Line
 Wire Bus Line
 	3700 3200 3700 3400
 Wire Bus Line
-	3700 3400 3700 3500
+	3700 3400 3700 3600
 Wire Bus Line
-	3700 3500 3700 3700
+	3700 3600 3700 3800
 Wire Bus Line
-	3700 3700 3700 3900
+	3700 3800 3700 4550
 Wire Bus Line
-	3700 3900 3700 4650
+	3700 4550 3700 4750
 Wire Bus Line
-	3700 4650 3700 4850
-Wire Bus Line
-	3700 4850 3700 4950
+	3700 4750 3700 4950
 Wire Bus Line
 	3700 4950 3700 5150
 Wire Bus Line
@@ -1553,15 +1551,13 @@ Wire Bus Line
 Wire Bus Line
 	5500 4850 5500 5050
 Wire Bus Line
-	5500 5050 5500 5250
+	5500 5050 5500 5150
 Wire Bus Line
-	5500 5250 5500 5600
+	5500 5150 5500 5600
 Wire Bus Line
-	6450 1000 6450 1150
+	6450 1000 6450 1500
 Wire Bus Line
-	6450 1150 6450 1600
-Wire Bus Line
-	6450 1600 6450 1700
+	6450 1500 6450 1700
 Wire Bus Line
 	6450 1700 6450 1900
 Wire Bus Line
@@ -1575,7 +1571,9 @@ Wire Bus Line
 Wire Bus Line
 	19750 4400 19750 4500
 Wire Bus Line
-	21250 6050 21250 6250
+	21250 5950 21250 6150
+Wire Bus Line
+	21250 6150 21250 6250
 Wire Bus Line
 	21250 6250 21250 6450
 Wire Bus Line
@@ -1583,7 +1581,7 @@ Wire Bus Line
 Wire Bus Line
 	21250 6650 21250 6750
 Wire Bus Line
-	21250 6750 21250 7350
+	21250 7150 21250 7350
 Text Notes 12800 5650 0    50   ~ 0
 ROM_CE = /(U8B_Q + A14 + A15 + /RD)
 Text Notes 12800 5750 0    50   ~ 0
@@ -1814,6 +1812,10 @@ Text Label 8100 5500 0    50   ~ 0
 D4
 Text Label 8150 5200 0    50   ~ 0
 {slash}RESET
+Text Label 8225 4000 2    50   ~ 0
+{slash}A9
+Text Label 8250 3800 2    50   ~ 0
+{slash}(A14+A15)
 Text Label 9500 2450 0    50   ~ 0
 {slash}NMI
 Text Label 10050 5600 0    50   ~ 0
@@ -1836,6 +1838,10 @@ Text Label 10150 6500 2    50   ~ 0
 A15
 Text Label 10300 5900 2    50   ~ 0
 U8B_Q
+Text Label 12175 5900 2    50   ~ 0
+{slash}(A14+A15)
+Text Label 12175 6400 2    50   ~ 0
+{slash}A9
 Text Label 12850 4500 2    50   ~ 0
 U8B_Q
 Text Label 12950 3300 0    50   ~ 0
@@ -1844,12 +1850,16 @@ Text Label 13150 4750 0    50   ~ 0
 {slash}IORQ
 Text Label 14050 4650 0    50   ~ 0
 {slash}IORQ_EXT
-Text Label 15350 5900 0    50   ~ 0
+Text Label 15450 5900 0    50   ~ 0
 {slash}ROMCS
 Text Label 20000 4200 0    50   ~ 0
 D'6
 Text Label 20000 4300 0    50   ~ 0
 D'7
+Text Label 21250 6000 2    50   ~ 0
+D'[0...7]
+Text Label 21250 7200 2    50   ~ 0
+A[0...15]
 Text Label 21500 5950 0    50   ~ 0
 D'0
 Text Label 21500 6050 0    50   ~ 0
@@ -1874,6 +1884,14 @@ Text Label 21500 7150 0    50   ~ 0
 A5
 Text Label 21500 7250 0    50   ~ 0
 A6
+Text Label 22075 3900 0    50   ~ 0
+{slash}TR00
+Text Label 22100 3800 0    50   ~ 0
+{slash}WPRT
+Text Label 22100 4000 0    50   ~ 0
+{slash}IP
+Text Label 22925 6600 0    50   ~ 0
+{slash}WF
 Text Label 23200 3600 0    50   ~ 0
 D'3
 Text Label 23200 3700 0    50   ~ 0
@@ -1886,12 +1904,36 @@ Text Label 23200 4000 0    50   ~ 0
 D'2
 Text Label 23200 4100 0    50   ~ 0
 D'6
+Text Label 23725 9550 0    50   ~ 0
+{slash}WF
+Text Label 26325 5800 2    50   ~ 0
+DS0
+Text Label 26325 5900 2    50   ~ 0
+DS3
+Text Label 26325 6000 2    50   ~ 0
+DS2
+Text Label 26325 6200 2    50   ~ 0
+DS1
 Text Label 26350 5700 2    50   ~ 0
 MOTOR_ON
+Text Label 27025 6900 0    50   ~ 0
+{slash}TR00
+Text Label 27025 7000 0    50   ~ 0
+{slash}WPRT
 Text Label 27100 6600 0    50   ~ 0
 STEP
+Text Label 27150 6000 0    50   ~ 0
+{slash}IP
 Text Label 27150 6500 0    50   ~ 0
 DIR
+Text Label 27975 4400 2    50   ~ 0
+DS3
+Text Label 28000 4000 2    50   ~ 0
+DS2
+Text Label 28050 3450 2    50   ~ 0
+DS0
+Text Label 28925 3550 2    50   ~ 0
+DS1
 Text GLabel 850  1800 0    50   Input ~ 0
 plus3_5V
 Text GLabel 2700 5550 2    50   Input ~ 0
@@ -1912,18 +1954,12 @@ Text GLabel 8000 5600 0    50   Input ~ 0
 IO_WR1
 Text GLabel 8250 2450 0    50   Input ~ 0
 A14+A15
-Text GLabel 9000 3800 0    50   Input ~ 0
-{slash}(A14+A15)
-Text GLabel 9000 4000 0    50   Input ~ 0
-{slash}A9
 Text GLabel 12350 5600 2    50   Output ~ 0
 {slash}ROM_CE
 Text GLabel 12350 5700 2    50   Output ~ 0
 ROM_CE
 Text GLabel 12350 5800 2    50   Output ~ 0
 DIR
-Text GLabel 12350 5900 2    50   Output ~ 0
-{slash}(A14+A15)
 Text GLabel 12350 6000 2    50   Output ~ 0
 A14+A15
 Text GLabel 12350 6100 2    50   Output ~ 0
@@ -1932,8 +1968,6 @@ Text GLabel 12350 6200 2    50   Output ~ 0
 U10_CP
 Text GLabel 12350 6300 2    50   Output ~ 0
 U11_OEB
-Text GLabel 12350 6400 2    50   Output ~ 0
-{slash}A9
 Text GLabel 12350 6500 2    50   Output ~ 0
 IO_WR1
 Text GLabel 14900 5600 0    50   Input ~ 0
@@ -1952,12 +1986,6 @@ Text GLabel 21550 7450 0    50   Input ~ 0
 FDC_RESET
 Text GLabel 21750 4600 2    50   Input ~ 0
 U11_OEB
-Text GLabel 22100 3800 2    50   Input ~ 0
-{slash}WPRT
-Text GLabel 22100 3900 2    50   Input ~ 0
-{slash}TR00
-Text GLabel 22100 4000 2    50   Input ~ 0
-{slash}IP
 Text GLabel 22100 4200 2    50   Input ~ 0
 DRQ
 Text GLabel 22100 4300 2    50   Input ~ 0
@@ -1972,24 +2000,20 @@ Text GLabel 22850 5900 2    50   Input ~ 0
 FD_DATA
 Text GLabel 22850 6000 2    50   Input ~ 0
 FD_CLK
-Text GLabel 22950 6300 2    50   Input ~ 0
-FDC_WPRT
-Text GLabel 22950 6400 2    50   Input ~ 0
-FDC_IP
-Text GLabel 22950 6500 2    50   Input ~ 0
-FDC_TR00
-Text GLabel 22950 6600 2    50   Input ~ 0
-{slash}WF
 Text GLabel 23050 7600 2    50   Input ~ 0
 HLT
 Text GLabel 23150 4300 0    50   Input ~ 0
 U10_CP
+Text GLabel 23150 6300 2    50   Input ~ 0
+FDC_WPRT
+Text GLabel 23150 6400 2    50   Input ~ 0
+FDC_IP
+Text GLabel 23150 6500 2    50   Input ~ 0
+FDC_TR00
 Text GLabel 23650 8450 0    50   Input ~ 0
 DATA_READ
 Text GLabel 23650 9350 0    50   Input ~ 0
 4Mhz
-Text GLabel 23650 9550 0    50   Input ~ 0
-{slash}WF
 Text GLabel 24600 3600 2    50   Input ~ 0
 HLT
 Text GLabel 24600 4000 2    50   Input ~ 0
@@ -1998,36 +2022,14 @@ Text GLabel 24600 4100 2    50   Input ~ 0
 DDEN
 Text GLabel 26100 3000 2    50   Output ~ 0
 HEAD
-Text GLabel 26350 5800 0    50   Input ~ 0
-DS0
-Text GLabel 26350 5900 0    50   Input ~ 0
-DS3
-Text GLabel 26350 6000 0    50   Input ~ 0
-DS2
-Text GLabel 26350 6200 0    50   Input ~ 0
-DS1
 Text GLabel 26500 8550 2    50   Output ~ 0
 FD_DATA
-Text GLabel 27150 6000 0    50   Input ~ 0
-{slash}IP
-Text GLabel 27150 6900 0    50   Output ~ 0
-{slash}TR00
-Text GLabel 27150 7000 0    50   Output ~ 0
-{slash}WPRT
-Text GLabel 27150 7100 0    50   Output ~ 0
+Text GLabel 27150 7100 0    50   Input ~ 0
 DATA_READ
 Text GLabel 27150 7200 0    50   Input ~ 0
 HEAD
-Text GLabel 27850 4000 2    50   Output ~ 0
-DS2
-Text GLabel 27850 4400 2    50   Output ~ 0
-DS3
-Text GLabel 28050 3450 0    50   Output ~ 0
-DS0
 Text GLabel 28550 8850 2    50   Output ~ 0
 FD_CLK
-Text GLabel 28700 3550 2    50   Output ~ 0
-DS1
 $Comp
 L power:PWR_FLAG #FLG0102
 U 1 1 5E5D2154
@@ -2240,12 +2242,12 @@ $EndComp
 $Comp
 L power:+5V #PWR0109
 U 1 1 5F93A25A
-P 15250 5300
-F 0 "#PWR0109" H 15250 5150 50  0001 C CNN
-F 1 "+5V" H 15265 5473 50  0000 C CNN
-F 2 "" H 15250 5300 50  0001 C CNN
-F 3 "" H 15250 5300 50  0001 C CNN
-	1    15250 5300
+P 15350 5350
+F 0 "#PWR0109" H 15350 5200 50  0001 C CNN
+F 1 "+5V" H 15365 5523 50  0000 C CNN
+F 2 "" H 15350 5350 50  0001 C CNN
+F 3 "" H 15350 5350 50  0001 C CNN
+	1    15350 5350
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -3239,17 +3241,6 @@ F 3 "~" H 3350 8650 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L dos_5-0x-eagle-import:BC639 Q1
-U 1 1 7A211019
-P 15150 5600
-F 0 "Q1" H 15350 5700 60  0000 L BNN
-F 1 "BC639" H 15350 5600 60  0000 L BNN
-F 2 "Package_TO_SOT_THT:TO-92_Inline" H 15150 5600 50  0001 C CNN
-F 3 "" H 15150 5600 50  0001 C CNN
-	1    15150 5600
-	1    0    0    -1  
-$EndComp
-$Comp
 L Connector:Conn_01x05_Male JP5
 U 1 1 5E518CE8
 P 26650 5400
@@ -3283,7 +3274,7 @@ F 3 "~" H 28400 3550 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L dos_5-0x-eagle-import:10-XX S2
+L beta128_r0.3-rescue:10-XX-dos_5-0x-eagle-import S2
 U 1 1 F82F9BF5
 P 7350 2350
 F 0 "S2" V 7100 2250 60  0000 L BNN
@@ -3294,7 +3285,7 @@ F 3 "" H 7350 2350 50  0001 C CNN
 	0    -1   1    0   
 $EndComp
 $Comp
-L dos_5-0x-eagle-import:255SB S1
+L beta128_r0.3-rescue:255SB-dos_5-0x-eagle-import S1
 U 1 1 CEBFFD5E
 P 12100 3200
 F 0 "S1" V 11850 3125 60  0000 L BNN
@@ -3303,6 +3294,17 @@ F 2 "SINCLAIR:SW_C&K_710x-xx-xx-Z-_SPDT" H 12100 3200 50  0001 C CNN
 F 3 "" H 12100 3200 50  0001 C CNN
 	1    12100 3200
 	0    -1   1    0   
+$EndComp
+$Comp
+L Device:Q_NPN_ECB Q1
+U 1 1 5E723837
+P 15250 5600
+F 0 "Q1" H 15441 5645 50  0000 L CNN
+F 1 "BC639" H 15441 5555 50  0000 L CNN
+F 2 "" H 15450 5700 50  0001 C CNN
+F 3 "~" H 15250 5600 50  0001 C CNN
+	1    15250 5600
+	1    0    0    -1  
 $EndComp
 $Comp
 L Switch:SW_DIP_x02 SW1
