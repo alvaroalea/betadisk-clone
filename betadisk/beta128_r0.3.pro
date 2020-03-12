@@ -1,4 +1,4 @@
-update=jue 12 mar 2020 15:58:39 CET
+update=jue 12 mar 2020 17:25:59 CET
 version=1
 last_client=kicad
 [general]
@@ -14,24 +14,6 @@ LibDir=
 [eeschema/libraries]
 [SchematicFrame]
 version=1
-[sheetnames]
-1=00000000-0000-0000-0000-00005e695a87:
-[schematic_editor]
-version=1
-PageLayoutDescrFile=
-PlotDirectoryName=
-SubpartIdSeparator=0
-SubpartFirstId=65
-NetFmtName=
-SpiceAjustPassiveValues=0
-LabSize=12700
-ERC_WriteFile=0
-ERC_TestSimilarLabels=1
-ERC_CheckUniqueGlobalLabels=1
-ERC_CheckBusDriverConflicts=1
-ERC_CheckBusEntryConflicts=1
-ERC_CheckBusToBusConflicts=1
-ERC_CheckBusToNetConflicts=1
 [pcbnew]
 version=1
 PageLayoutDescrFile=
@@ -268,3 +250,23 @@ dPairViaGap=0.25
 version=1
 [ModEditFrame]
 version=1
+[sheetnames]
+1=00000000-0000-0000-0000-00005e6a6365:
+2=00000000-0000-0000-0000-00005e6bcef8:Disc Controler Logic
+3=00000000-0000-0000-0000-00005e82f334:Memory Paging Logic
+[schematic_editor]
+version=1
+PageLayoutDescrFile=
+PlotDirectoryName=
+SubpartIdSeparator=0
+SubpartFirstId=65
+NetFmtName=
+SpiceAjustPassiveValues=0
+LabSize=12700
+ERC_WriteFile=0
+ERC_TestSimilarLabels=1
+ERC_CheckUniqueGlobalLabels=1
+ERC_CheckBusDriverConflicts=1
+ERC_CheckBusEntryConflicts=1
+ERC_CheckBusToBusConflicts=1
+ERC_CheckBusToNetConflicts=1
