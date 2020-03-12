@@ -1,8 +1,6 @@
-/* Kempston Joystick and Motor On signal for VDR's +D Clone */
-/* con el WD1770/1772 basta una GAL22V10, pero con el WD1773 tiene que ser un ATF750C */
-Name     Kempston;
+Name     Beta128;
 PartNo   00 ;
-Date     28/06/2018 ;
+Date     10/03/2020 ;
 Revision 01 ;
 Designer Alvaro Alea ;
 Company  None ;
@@ -11,73 +9,47 @@ Location  ;
 Device   g22v10 ;
 
 /* *************** INPUT PINS *********************/
-PIN  1   = A5                        ; /*                                 */ 
+PIN  1   = IORQ                      ; /*                                 */ 
 PIN  2   = WR                        ; /*                                 */ 
-PIN  3   = A4                        ; /*                                 */ 
-PIN  4   = A3                        ; /*                                 */ 
-PIN  5   = IOREQ                     ; /*                                 */ 
-PIN  6   = RD                        ; /*                                 */ 
-PIN  7   = FDC_CS                    ; /*                                 */ 
-PIN  8   = J_Left                    ; /*                                 */ 
-PIN  9   = J_Right                   ; /*                                 */ 
-PIN  10  = J_Up                      ; /*                                 */ 
-PIN  11  = J_Down                    ; /*                                 */ 
-PIN  13  = J_Fire                    ; /*                                 */ 
+PIN  3   = RD                        ; /*                                 */ 
+PIN  4   = U8B_Q                     ; /*                                 */ 
+PIN  5   = A0                        ; /*                                 */ 
+PIN  6   = A1                        ; /*                                 */ 
+PIN  7   = A7                        ; /*                                 */ 
+PIN  8   = A9                        ; /*                                 */ 
+PIN  9   = A14                       ; /*                                 */ 
+PIN  10  = A15                       ; /*                                 */ 
+PIN  11  = NC_1                      ; /*                                 */ 
+PIN  13  = NC_2                      ; /*                                 */ 
 
 
 /* *************** OUTPUT PINS *********************/
-PIN  14   = MOTOR                     ; /*                                 */ 	   		
-PIN  16   = D7                        ; /*                                 */ 
-PIN  17   = D6                        ; /*                                 */ 
-PIN  18   = D5                        ; /*                                 */ 
-PIN  19   = D4                        ; /*                                 */ 
-PIN  20   = D3                        ; /*                                 */ 
-PIN  21   = D2                        ; /*                                 */ 
-PIN  22   = D1                        ; /*                                 */ 
-PIN  23   = D0                        ; /*                                 */ 
+PIN  14   = IO_WR1                    ; /*                                 */ 	   		
+PIN  15   = notA9                     ; /*                                 */ 
+PIN  16   = U11_EOB                   ; /*                                 */ 
+PIN  17   = U10_CP                    ; /*                                 */ 
+PIN  18   = FDC_CS                    ; /*                                 */ 
+PIN  19   = A14andA15                 ; /*                                 */ 
+PIN  20   = notA14andA15              ; /*                                 */ 
+PIN  21   = DIR                       ; /*                                 */ 
+PIN  22   = ROM_CE                    ; /*                                 */ 
+PIN  23   = notROM_CE                 ; /*                                 */ 
 
 
-/* **** EL INTERFAZ KEMPSTON **** */
+/* **** THE CODE **** */
 
-Kempston = IOREQ # RD # A5; 
- 
-D7 = 'b'0;
-D6 = 'b'0;
-D5 = 'b'0;
-D4 = !Kempston & !J_Fire;
-D3 = !Kempston & !J_Up;
-D2 = !Kempston & !J_Down;
-D1 = !Kempston & !J_Left;
-D0 = !Kempston & !J_Right;
+notA9 = !A9 ;
+A14andA15 =     A14 & A15 ;
+notA14andA15 =!(A14 & A15) ;
 
-D7.OE = !Kempston;
-D6.OE = !Kempston;
-D5.OE = !Kempston;
-D4.OE = !Kempston;
-D3.OE = !Kempston;
-D2.OE = !Kempston;
-D1.OE = !Kempston;
-D0.OE = !Kempston;
+IO_WR1 = A1 # A15 # WR # IORQ ;
 
-/* **** MOTOR ON ALTERNATIVO **** */
+U11_EOB = !(A0 # A1) # A7 # U8B_Q # IORQ # WR ;
+U10_CP =  !(A0 # A1) # A7 # U8B_Q # IORQ # RD ;
+FDC_CS =  !(A0 # A1) #!A7 # U8B_Q # IORQ      ;
 
-/* (FIXME: comprobar si FDC_CS incorpora IOREQ o no */
+ROM_CE =        A14 # A15 # U8B_Q        # RD ;
+notROM_CE =   !(A14 # A15 # U8B_Q        # RD); 
 
-$define ON 'b'1
-$define OFF 'b'0
-MOTOR.ar = OFF;
-MOTOR.sp = OFF;
-MOTOR.oe = ON;
+DIR =              ROM_CE # U8B_Q # IORQ # RD ;
 
-Control_Reg_Access = A3 # A4 # WR # FDC_CS;
-Set_Motor = !Control_Reg_Access & D3;
-Reset_Motor =!Control_Reg_Access & !D3;
-
-sequenced MOTOR {
-  present OFF
-	if Set_Motor next ON;
-	default next OFF;
-  present ON
-	if Reset_Motor next OFF;
-	default next ON;
-}
