@@ -12,7 +12,7 @@ Device   g22v10 ;
 PIN  1   = IORQ                      ; /*                                 */ 
 PIN  2   = WR                        ; /*                                 */ 
 PIN  3   = RD                        ; /*                                 */ 
-PIN  4   = U8B_Q                     ; /*                                 */ 
+PIN  4   = BETA_ON                     ; /*                                 */ 
 PIN  5   = A0                        ; /*                                 */ 
 PIN  6   = A1                        ; /*                                 */ 
 PIN  7   = A7                        ; /*                                 */ 
@@ -29,8 +29,8 @@ PIN  15   = notA9                     ; /*                                 */
 PIN  16   = U11_EOB                   ; /*                                 */ 
 PIN  17   = U10_CP                    ; /*                                 */ 
 PIN  18   = FDC_CS                    ; /*                                 */ 
-PIN  19   = A14andA15                 ; /*                                 */ 
-PIN  20   = notA14andA15              ; /*                                 */ 
+PIN  19   = P0                        ; /*                                 */ 
+PIN  20   = P123                      ; /*                                 */ 
 PIN  21   = DIR                       ; /*                                 */ 
 PIN  22   = ROM_CE                    ; /*                                 */ 
 PIN  23   = notROM_CE                 ; /*                                 */ 
@@ -39,17 +39,23 @@ PIN  23   = notROM_CE                 ; /*                                 */
 /* **** THE CODE **** */
 
 notA9 = !A9 ;
-A14andA15 =     A14 & A15 ;
-notA14andA15 =!(A14 & A15) ;
+P0 =    A14 # A15  ;
+P123 =!(A14 # A15) ;
 
 IO_WR1 = A1 # A15 # WR # IORQ ;
 
-U11_EOB = !(A0 # A1) # A7 # U8B_Q # IORQ # WR ;
-U10_CP =  !(A0 # A1) # A7 # U8B_Q # IORQ # RD ;
-FDC_CS =  !(A0 # A1) #!A7 # U8B_Q # IORQ      ;
+U11_EOB = !(A0 # A1) # A7 # BETA_ON # IORQ # WR ;
+U10_CP =  !(A0 # A1) # A7 # BETA_ON # IORQ # RD ;
+FDC_CS =  !(A0 # A1) #!A7 # BETA_ON # IORQ      ;
 
-ROM_CE =        A14 # A15 # U8B_Q        # RD ;
-notROM_CE =   !(A14 # A15 # U8B_Q        # RD); 
+ROM_CE =        A14 # A15 # BETA_ON        # RD ; 
+notROM_CE =   !(A14 # A15 # BETA_ON        # RD); 
+DIR =              ROM_CE # BETA_ON # IORQ # RD ;
 
-DIR =              ROM_CE # U8B_Q # IORQ # RD ;
+/*
+ROM_CE =    P0 # BETA_ON ; 
+notROM_CE = !(ROM_CE); 
+DIR = ROM_CE # IORQ # RD ;
+*/
+
 
