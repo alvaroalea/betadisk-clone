@@ -1,61 +1,58 @@
-Name     Beta128;
-PartNo   00 ;
-Date     10/03/2020 ;
-Revision 01 ;
-Designer Alvaro Alea ;
-Company  None ;
-Assembly None ;
-Location  ;
-Device   g22v10 ;
+Name Beta128;
+PartNo 00;
+Date 10/03/2020;
+Rev 01;
+Designer Alvaro;
+Company None;
+Assembly None;
+Location None;
+Device g22v10;
+/* ** INPUT PINS **/
+Pin 1 = IORQ;
+Pin 2 = WR;
+Pin 3 = RD;
+Pin 4 = BETA_ON;
+Pin 5 = A0;
+Pin 6 = A1;
+Pin 7 = A7;
+Pin 8 = A9;
+Pin 9 = A14;
+Pin 10 = A15;
+/* ** OUTPUT PINS **/
+pin 14 = IO_WR1;
+pin 15 = notA9;
+pin 16 = U11_EOB;
+pin 17 = U10_CP;
+pin 18 = FDC_CS;
+pin 19 = P0;
+pin 20 = P123;
+pin 21 = DIR;
+pin 22 = ROM_CE;
+pin 23 = notROM_CE;
 
-/* *************** INPUT PINS *********************/
-PIN  1   = IORQ                      ; /*                                 */ 
-PIN  2   = WR                        ; /*                                 */ 
-PIN  3   = RD                        ; /*                                 */ 
-PIN  4   = BETA_ON                     ; /*                                 */ 
-PIN  5   = A0                        ; /*                                 */ 
-PIN  6   = A1                        ; /*                                 */ 
-PIN  7   = A7                        ; /*                                 */ 
-PIN  8   = A9                        ; /*                                 */ 
-PIN  9   = A14                       ; /*                                 */ 
-PIN  10  = A15                       ; /*                                 */ 
-PIN  11  = NC_1                      ; /*                                 */ 
-PIN  13  = NC_2                      ; /*                                 */ 
-
-
-/* *************** OUTPUT PINS *********************/
-PIN  14   = IO_WR1                    ; /*                                 */ 	   		
-PIN  15   = notA9                     ; /*                                 */ 
-PIN  16   = U11_EOB                   ; /*                                 */ 
-PIN  17   = U10_CP                    ; /*                                 */ 
-PIN  18   = FDC_CS                    ; /*                                 */ 
-PIN  19   = P0                        ; /*                                 */ 
-PIN  20   = P123                      ; /*                                 */ 
-PIN  21   = DIR                       ; /*                                 */ 
-PIN  22   = ROM_CE                    ; /*                                 */ 
-PIN  23   = notROM_CE                 ; /*                                 */ 
-
-
-/* **** THE CODE **** */
-
-notA9 = !A9 ;
-P0 =    A14 # A15  ;
-P123 =!(A14 # A15) ;
-
-IO_WR1 = A1 # A15 # WR # IORQ ;
-
-U11_EOB = !(A0 # A1) # A7 # BETA_ON # IORQ # WR ;
-U10_CP =  !(A0 # A1) # A7 # BETA_ON # IORQ # RD ;
-FDC_CS =  !(A0 # A1) #!A7 # BETA_ON # IORQ      ;
-
-ROM_CE =        A14 # A15 # BETA_ON        # RD ; 
-notROM_CE =   !(A14 # A15 # BETA_ON        # RD); 
-DIR =              ROM_CE # BETA_ON # IORQ # RD ;
-
+/* ** CODE **/
 /*
-ROM_CE =    P0 # BETA_ON ; 
-notROM_CE = !(ROM_CE); 
-DIR = ROM_CE # IORQ # RD ;
+IO_WR1.oe = 1;
+notA9.oe = 1;
+U11_EOB.oe = 1;
+U10_CP.oe = 1;
+FDS_CS.oe = 1;
+P0.oe = 1;
+P123.oe = 1;
+DIR.oe = 1;
+ROM_CE.oe = 1;
+notROMCE.oe = 1;
 */
 
+notA9 = !A9;
+P0 = A14 # A15;
+P123 = !P0;
 
+IO_WR1 = A1 # A15 # WR # IORQ;
+U11_EOB = !(A0 # A1) # A7 # BETA_ON # IORQ # WR;
+U10_CP =  !(A0 # A1) # A7 # BETA_ON # IORQ # RD; 
+FDC_CS =  !(A0 # A1) #!A7 # BETA_ON # IORQ;
+
+ROM_CE = P0 # BETA_ON;
+notROM_CE = !ROM_CE;
+DIR = ROM_CE # IORQ # RD; 
