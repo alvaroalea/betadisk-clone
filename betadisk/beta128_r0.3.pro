@@ -1,4 +1,4 @@
-update=mar 07 abr 2020 22:36:57 CEST
+update=mié 08 abr 2020 14:28:05 CEST
 version=1
 last_client=kicad
 [general]
@@ -16,26 +16,10 @@ LibDir=
 version=1
 [ModEditFrame]
 version=1
-[schematic_editor]
-version=1
-PageLayoutDescrFile=
-PlotDirectoryName=
-SubpartIdSeparator=0
-SubpartFirstId=65
-NetFmtName=
-SpiceAjustPassiveValues=0
-LabSize=12700
-ERC_WriteFile=0
-ERC_TestSimilarLabels=1
-ERC_CheckUniqueGlobalLabels=1
-ERC_CheckBusDriverConflicts=1
-ERC_CheckBusEntryConflicts=1
-ERC_CheckBusToBusConflicts=1
-ERC_CheckBusToNetConflicts=1
 [SchematicFrame]
 version=1
 [sheetnames]
-1=00000000-0000-0000-0000-00005e8c9a26:
+1=00000000-0000-0000-0000-00005e8da8f1:
 2=00000000-0000-0000-0000-00005e6bcef8:Disc Controler Logic
 3=00000000-0000-0000-0000-00005e82f334:Memory Paging Logic
 [pcbnew]
@@ -281,3 +265,24 @@ uViaDrill=0.1
 dPairWidth=0.35
 dPairGap=0.3
 dPairViaGap=0.25
+[schematic_editor]
+version=1
+PageLayoutDescrFile=
+PlotDirectoryName=./
+NetFmtName=
+SpiceAjustPassiveValues=0
+SubpartIdSeparator=0
+SubpartFirstId=65
+LabSize=50
+TextOffsetRatio=0.08
+LineThickness=5.984251968503937
+BusThickness=12
+WireThickness=6
+JunctionSize=40
+FieldNameTemplates=(templatefields)
+ERC_TestSimilarLabels=1
+ERC_CheckUniqueGlobalLabels=1
+ERC_CheckBusDriverConflicts=1
+ERC_CheckBusEntryConflicts=1
+ERC_CheckBusToBusConflicts=1
+ERC_CheckBusToNetConflicts=1
