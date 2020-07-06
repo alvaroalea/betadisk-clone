@@ -2,7 +2,7 @@
 the schematic and PCB for this interfaz, make in KICAD
 Including gerber files to direct order, the PCB is just 15x10cm.
 
-THIS IS WORK IN PROGRESS.
+THIS IS WORK IN PROGRESS.ACTUALY THIS INTERFACE DO NOT WORK!!!!! BE AWARE
 
 BOM is probably not acurrate, gerbers have names wrong.
 
